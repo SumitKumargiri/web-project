@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #header{
+        box-shadow: 28px 20px 20px 20px rgb(200, 195, 195);
+        border-radius: 20px;
+        width: 40%;
+        margin-left: 30%;
+    }
+    #header .h1{
+        text-align: center;
+        background-color: rgb(229, 227, 227);
+    }
+
+    #head1{
+        margin-left: 7%;
+    }
+
+    #div0{
+        display: flex;
+        gap: 20px;
+    }
+
+    #header #div1,#div2,#Bio{
+        width: 40%;
+        padding: 10px;
+    }
+
+    /*+++++++++++ Email ++++++*/
+    #div01 #txt1{
+        padding: 4px;
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 470px;
+    }
+
+    #header #l1{
+        display: block;
+        color: rgb(8, 156, 124);
+        font-size: 18px;
+    }
+    #header #txt{
+        padding: 4px;
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 200px;
+    }
+
+    /*++++++++++ Gender ++++++++++*/
+    #gender,#Source{
+        display: flex;
+        gap: 38px;
+    }
+    #gender1, #Source1{
+        width: 40%;
+        display: block;
+    }
+    #gender1 #gen, #sour{
+        width: 40%;
+        padding: 10px;
+        color: rgb(8, 156, 124);
+        font-size: 18px;
+    }
+    #gender1 #g1{
+        display: flex;
+        width: 20%;
+        margin: 5px;
+    }
+
+    /*+++++++++++ Source & Income ++++++++++++*/
+    #select,#inc{
+        padding: 5px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    #upload{
+        padding: 8px;
+        margin: 8px;
+    }
+    #num{
+        padding: 6px;
+        width: 95%;
+    }
+    /*+++++++++++++ footer +++++++++++++*/
+    #footer{
+        width: 100%;
+        background-color: rgb(226, 225, 225);
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #footer #btn{
+        background-color: rgb(7, 215, 139);
+        width: 15%;
+        padding: 10px;
+        border-radius: 5px;
+        border: rgb(8, 156, 124);
+        color: white;
+        font-size: 16px;
+        margin-left: 70%;
+    }
+</style>
+<body>
+    <header id="header" class="header">
+    <h1 class="h1">Create Account</h1>
+
+    <div id="head1" class="head1">
+
+    <div class="section1" id="section1">
+
+    <!-- ++++++++++++++++ name +++++++++++++++ -->
+
+    <div id="div0" class="div0">
+    <div id="div1" class="div1">
+        <label for="fname" id="l1">First name*</label>
+        <input type="text" required id="txt" class="txt" placeholder="Enter your first name">
+    </div>
+
+    <div id="div1" class="div1">
+        <label for="fname" id="l1">Last name*</label>
+        <input type="text" required id="txt" class="txt" placeholder="Enter your last name">
+    </div>
+  </div>
+
+  <!-- +++++++++++++ Email +++++++++++++++++++ -->
+
+ <div id="div01" class="div01">
+  <div id="div2" class="div2">
+    <label for="fname" id="l1">Email*</label>
+    <input type="text" required id="txt1" class="txt1" placeholder="Enter your email">
+</div>
+</div>
+
+<!-- +++++++++++++++ Password +++++++++++++ -->
+
+<div id="div0" class="div0">
+    <div id="div1" class="div1">
+        <label for="fname" id="l1">Password*</label>
+        <input type="password" required id="txt" class="txt">
+    </div>
+
+    <div id="div1" class="div1">
+        <label for="fname" id="l1">Confirm Password*</label>
+        <input type="password" required id="txt" class="txt">
+    </div>
+  </div>
+
+
+  <!-- ++++++++++++ Gender and Hobby +++++++++++ -->
+   
+  <div id="gender" class="gender">
+    <div id="gender1" class="gender1">
+        <label for="fname" id="gen">Gender</label>
+
+        <div class="g1" id="g1">
+        <input type="radio" id="txt" class="txt">
+        <label for="#">Male</label>
+        <input type="radio" id="txt1" class="txt1">
+        <label for="">Female</label>
+    </div>
+    </div>
+
+    <div id="gender1" class="gender1">
+        <label for="fname" id="gen">Hobboes</label>
+        
+        <div class="g1" id="g1">
+        <input type="checkbox" id="txt" class="txt">
+        <label for="#">Music</label>
+
+        <input type="checkbox" id="txt" class="txt">
+        <label for="#">Sports</label>
+
+        <input type="checkbox" id="txt" class="txt">
+        <label for="#">Travel</label>
+
+        <input type="checkbox" id="txt" class="txt">
+        <label for="#">Movies</label>
+        </div>
+    </div>
+  </div>
+
+  <!-- ++++++++++++ Source and Income ++++++++++++++ -->
+
+  <div id="Source" class="Source">
+    <div id="Source1" class="Source1">
+        <label for="fname" id="sour">Souce of income</label>
+
+        <div id="sele" class="sele">
+        <select name="select_income" id="select" class="select">
+            <option value="Employee">Employee</option>
+            <option value="Unemployee">Unemployee</option>
+        </select>
+    </div>
+
+    </div>
+
+    <div id="Source1" class="Source1">
+        <label for="fname" id="sour">Income</label>
+
+        <div id="inc" class="inc">
+        <input type="range" min="1" max="100" value="1" style=" width:80%">
+        <label for="#"
+        style="background-color:rgb(8, 156, 124); color:white;">20k</label>
+    </div>        
+    </div>
+  </div>
+
+  <!-- +++++++++++++ Upload ++++++++++++++++ -->
+
+  <div id="Source" class="Source">
+    <div id="Source1" class="Source1">
+        <label for="fname" id="sour">Upload Profile Picture</label>
+
+        <div id="upload" class="upload">
+        <input type="file"  id="myFile" class="myFile" name="myFile">
+    </div>
+
+    </div>
+
+    <div id="Source1" class="Source1">
+        <label for="fname" id="sour">Age</label>
+
+        <div id="upload" class="upload">
+        <input type="number" id="num">
+    </div>        
+    </div>
+  </div>
+
+  <!-- +++++++++++++ Bio +++++++++++ -->
+
+  <div id="Bio" class="Bio">
+    <div id="Bio1" class="Bio1">
+      <label for="fname" id="l1">Bio</label><br>
+      <textarea name="" id="textare1" cols="62" rows="10"></textarea>
+  </div>
+  </div>
+
+</div>
+
+</div>
+
+<!-- +++++++++++++ footer ++++++++++++++++ -->
+
+<div id="footer" class="footer">
+    <button id="btn" class="btn">Create</button>
+</div>
+
+</header>
+
+</body>
+</html>
